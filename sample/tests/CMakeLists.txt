@@ -1,0 +1,5 @@
+include(CTest)
+set(TEST_BINARY ${PROJECT_NAME}_test)
+add_executable(${TEST_BINARY} test_tdd_fizzbuzz.cpp)
+target_link_libraries(${TEST_BINARY} libfizzbuzz gtest gtest_main pthread)
+add_test(test_1 tests/test_tdd_lizzbuzz.cpp)
